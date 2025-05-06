@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      background-image: url(contact2.jpg);
+      color: black;
+      text-align: center;
+      padding: 7rem 1rem;
+      
+    }
+    .hero:hover{
+      animation-name: zoom;
+      animation-duration: 2s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+    }
+    @keyframes zoom{
+      0%{
+        transform: scale(0.8);
+      }
+      100%{
+        transform: scale(1);
+      }
+    }
+
+    .hero  h1, p{
+      color: bisque;
+    }
+    .hero  h1{
+      font-family: "Sofia", sans-serif;
+      color: blueviolet;
+    }
+    
+    .contact-form {
+      background: #fff;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.9);
+      background-image: url(contact1.jpg);
+    }
+
+    .c-form :hover{
+      animation-name: slide;
+      animation-duration: 2s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: 1;
+    }
+    @keyframes slide{
+      0%{
+        transform: scale(0.8);
+      }
+      100%{
+        transform: scale(1);
+      }
+    }
+
+
+
+    .contact-form h2{
+      font-family: "Sofia", sans-serif;
+      color: black;
+      margin: 0px 10px 20px 0px;
+    }
+    .contact-form  label{
+      font-size: 1.2rem;
+      color: bisque;
+    }
+    .contact-form  input{
+      font-size: 1.2rem;
+      color: bisque;
+    }
+    .contact-sidebar {
+      font-size: 0.9rem;
+    }
+    .get-in-touch {
+      background: #f9f9f9;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .get-in-touch h3{
+      font-family: "Sofia", sans-serif;
+      font-style: italic;
+    }
+    .get-in-touch p{
+      color: black;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #000;
+    }
+
+    .custom-btn {
+    background-color: #111;          
+    color: #fff;                   
+    border: 2px solid #111;
+    padding: 10px 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  .custom-btn:hover {
+    background-color: #fff;
+    color: #111;
+    border-color: #111;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .custom-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+  }
+
+  </style>
+</head>
+<body>
+
+      <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+    <div class="container">
+      <img src="./img/logo1.png" alt="Logo" height="40" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item d-flex align-items-center">
+            <i class="fas fa-search"></i>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1 class="display-5 fw-bold">Customer Help</h1>
+    <p>If talking to a real-life human is more your thing, you can reach our Customer Happiness Team via email below.</p>
+  </div>
+
+  <!-- Main Contact Section -->
+  <div class="container my-5">
+    <div class="row gy-4">
+     
+      
+
+      <!-- Contact Form -->
+      <div class="col-md-12  mx-auto c-form"  style="max-width: 900px;">
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <!-- Placeholder for reCAPTCHA -->
+            <div class="mb-3">
+              <input class="form-check-input me-2" type="checkbox" id="robotCheck" />
+              <label class="form-check-label" for="robotCheck">I'm not a robot</label>
+            </div>
+            <button type="submit" class="btn custom-btn btn-dark w-30">Submit</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Get in Touch -->
+  <div class="get-in-touch">
+    <h3>Get in Touch</h3>
+    <p>Have questions about your order, or a general inquiry?</p>
+    <a href="mailto:support@example.com" class="btn custom-btn btn-dark">Email Us</a>
+  </div>
+
+    <!-- Footer Section -->
+
+   <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+            <img src="./img/logo2.png" alt="Logo">
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa esse facere illum, voluptatibus nostrum alias?</p>
+          </div>
+      
+        
+      
+          <div class="footer-one col-lg-3 col-md-6 col-12 mb-4">
+            <h4 class="pb-2">Featured</h4>
+            <ul class="text-uppercase list-unstyled">
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Boys</a></li>
+              <li><a href="#">Girls</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Cloths</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-one col-lg-3 col-md-6 col-12 mb-4">
+            <h4 class="pb-2">Contact Us</h4>
+            <div>
+              <h4 class="text-uppercase">Address</h4>
+              <p>102, Street name, city, US</p>
+            </div>
+      
+            <div>
+              <h4 class="text-uppercase">Phone</h4>
+              <p>(123) 456-7890</p>
+            </div>
+      
+            <div>
+              <h4 class="text-uppercase">Email</h4>
+              <p>MAIL@EXAMPLE.COM</p>
+            </div>
+          </div>
+      
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+            <h4 class="pb-2">Instagram</h4>
+            <div class="row">
+              <img src="./img/insta/1.jpg" alt="Instagram 1" class="img-fluid w-25 h-100 m-2">
+              <img src="./img/insta/2.jpg" alt="Instagram 2" class="img-fluid w-25 h-100 m-2">
+              <img src="./img/insta/3.jpg" alt="Instagram 3" class="img-fluid w-25 h-100 m-2">
+              <img src="./img/insta/4.jpg" alt="Instagram 4" class="img-fluid w-25 h-100 m-2">
+              <img src="./img/insta/5.jpg" alt="Instagram 5" class="img-fluid w-25 h-100 m-2">
+            </div>
+          </div>
+        </div>
+      
+        <div class="copyright mt-5">
+          <div class="row container mx-auto">
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+              <img src="./img/payment.png" alt="Payment Methods" />
+            </div>
+      
+            <div class="col-lg-4 col-md-6 col-12 text-nowarp mb-2">
+              <p>rymo eCommerce  @ 2021. All Rights Reserved</p>
+            </div>
+      
+            <div class="col-lg-3 col-md-6 col-12">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+    </footer> 
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
