@@ -14,7 +14,7 @@
 }
 body{
     font-family:  "EB Garamond", serif;
-    /* overflow-x: hidden; */
+    /* overflow: hidden; */
 }
 
 h1{
@@ -76,9 +76,9 @@ nav.navbar {
     top: 0;
     left: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    /* border: 1px solid; */
+    width: 100%;
     /* overflow-x: hidden; */
-    /* width: 100%; */
+    /* flex-wrap: wrap; */
     
 }
 
@@ -141,7 +141,7 @@ nav.navbar {
         text-align: right;
     }
     #navbarContent > ul >li:nth-child(n) > a{
-        padding: 8px;
+        /* padding: 8px; */
     }
 }
 /* Search icon...... */
@@ -234,23 +234,47 @@ nav.navbar {
 }
 
 
-
+@media(max-width:500px){
+  #home .container{
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    /* max-width: 960px; */
+    margin-top: 60px;
+  }
+}
 @media(max-width:420px){
   body>nav{
     
   }
   .navbar{
     padding: 0;
-    width: 90%;
-    /* border: 1px solid; */
+    width: 100%;
+    /* border: 3px solid green; */
+
   }
+  .input-box {
+    width: 100px;
+    height: 35px;
+    /* border: 2px solid; */
+  }
+  .Logo{
+    height: 25px;
+    width: 25px;
+  }
+  /* .fa-bars{
+    color: red;
+    height: 17px;
+    width: 17px;
+  } */
   .input-box {
     width: 180px;
     height: 35px;
     /* border: 3px solid ; */
     border-radius: 20px;
     padding: 0 40px 0 15px;
-    
     margin: 0 3px;
   }
   .product-list{
@@ -263,6 +287,14 @@ nav.navbar {
 @media(max-width:350px){
   .product-list{
     width: 270px;
+  }
+  .input-box {
+    width: 150px;
+    height: 35px;
+    /* border: 3px solid ; */
+    border-radius: 20px;
+    padding: 0 40px 0 15px;
+    margin: 0;
   }
 }
 
@@ -300,6 +332,7 @@ nav.navbar {
  .text-box {
   
   margin-top: 20px;
+  padding-left: 30px;
 }
 
 .btn:link,
@@ -367,11 +400,14 @@ nav.navbar {
 
 #home .container h1{
   font-family: "Rye", serif;
+  text-align: center;
+  padding-left: 20px;
 }
 
   #home .container h5{
     font-size: 1.2rem;
     font-family: "Borel", cursive;
+    padding-left: 20px;
   }
 #home .container h1 span{
     color: coral;
@@ -385,6 +421,7 @@ nav.navbar {
     font-size: 1.15rem;
     font-family: "Marck Script", cursive;
     font-weight: bold;
+    padding-left: 20px;
   }
   #home .container{
     /* border: 1px solid; */
@@ -392,8 +429,8 @@ nav.navbar {
     align-items: flex-start;
     justify-content: start;
     flex-direction: column;
-    max-width: 960px;
-    margin: 60px;
+    /* max-width: 960px; */
+    margin-top: 60px;
   }
 /* .......................end of home section............... */
 /* ................brand section......................... */
@@ -550,17 +587,17 @@ nav.navbar {
     cursor: pointer;
     margin-bottom: 2rem;
     /* border: 1px solid; */
-    display: flex;
+    /* display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
    
 }
 .product img{
     transition: 0.3s all;
     /* border: 1px solid; */
-    height: 250px;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    /* height: auto; */
+    /* width: auto; */
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
 }
 .product:hover img{
     opacity: 0.4;
