@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+
 
 *{
     padding: 0;
@@ -7,7 +14,7 @@
 }
 body{
     font-family:  "EB Garamond", serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 h1{
@@ -51,7 +58,7 @@ button:hover{
 }
 
 hr{
-    width: 30px;
+    width: 50px;
     height: 2px;
     background-color: #fb774b;
 }
@@ -69,20 +76,26 @@ nav.navbar {
     top: 0;
     left: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid;
+    /* border: 1px solid; */
+    /* overflow-x: hidden; */
+    /* width: 100%; */
     
 }
 
 .navbar-light .nav-item .nav-link {
-    padding: 0 15px;
+    /* padding: 0 15px; */
     color: black;
     transition: 0.3s;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-family:  "Sedan SC", serif;
 }
 
 .navbar-light .nav-item .nav-link:hover,
 .fa-magnifying-glass:hover,
 .fa-cart-shopping:hover {
     color: coral;
+    text-decoration: underline;
 }
 
 .fa-magnifying-glass,
@@ -110,8 +123,9 @@ nav.navbar {
 .fa-bars:active{
     color: #fff;
 }
+
 @media only screen and  (max-width:991px){
-    body>nav>div>button:hover,
+ body>nav>div>button:hover,
     body>nav>div>button:focus{
         background-color: #fb774b;
     }
@@ -131,47 +145,58 @@ nav.navbar {
     }
 }
 /* Search icon...... */
+.search{
+  /* position: relative; */
+}
 .input-box {
   width: 200px;
   height: 35px;
-  border: 3px solid ;
+  /* border: 3px solid ; */
   border-radius: 20px;
   padding: 0 40px 0 15px;
   outline: none;
   margin: 0 10px 0px 30px;
   cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.input-icon {
+/* .input-icon {
   position: absolute;
   right: 160px;
   top: 27px;
   color: #888;
   pointer-events: none;
   cursor: pointer;
-  /* position: fixed; */
-}
+  
+} */
 
 .product-list{
   position: absolute;
   background-color: white;
-  border: 1px solid;
+  /* border: 1px solid; */
   top: 70px;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 15px;
   overflow-y: scroll;
-  height: 400px;
+  height: 380px;
   transition: right 0.3s ease;
   right: -100%;
   opacity: 0;
   transition: opacity 1s ease;
   pointer-events: none;
   z-index: 100;
+  /* position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 100; */
 }
 .active{
   right: 0;
   opacity: 1;
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }
 .product-list::-webkit-scrollbar{
   display: none;
@@ -190,11 +215,16 @@ nav.navbar {
 }
 .sea-products .p-details h2{
   font-size: 20px;
-  color: #1d1d1d;
+  color: rgb(80, 76, 76);
+  font-size: 1.2rem;
+  font-family:  "Borel", cursive;
 }
 .sea-products .p-details h3{
   font-size: 18px;
-  
+  color: rgb(207, 135, 166);
+}
+.sea-products .p-details h3 i{
+  color:  rgb(207, 135, 166);
 }
 .sea-products .p-details{
   padding-left: 15px;
@@ -206,13 +236,18 @@ nav.navbar {
 
 
 @media(max-width:420px){
+  body>nav{
+    
+  }
   .navbar{
     padding: 0;
+    width: 90%;
+    /* border: 1px solid; */
   }
   .input-box {
     width: 180px;
     height: 35px;
-    border: 3px solid ;
+    /* border: 3px solid ; */
     border-radius: 20px;
     padding: 0 40px 0 15px;
     
@@ -236,7 +271,7 @@ nav.navbar {
 
 
 #home {
-    background-image: url("img/back.jpg");
+    background-image: url("img/banner-1.jpg");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -249,8 +284,7 @@ nav.navbar {
     animation: fadeInScale 2s ease-out forwards;
     opacity: 0;
     transition: 0.2s;
-    border: 1px solid
-    ;
+    /* border: 1px solid */
 }
 @keyframes fadeInScale {
     0% {
@@ -263,15 +297,82 @@ nav.navbar {
     }
   }
 
-#home .btn {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+ .text-box {
   
-  #home .btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
+  margin-top: 20px;
+}
 
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: absolute;
+  border: 1px solid;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-white {
+  background-color: #fff;
+  /* color: ; */
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-white::after {
+  background-color:#fb774b;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#home .container h1{
+  font-family: "Rye", serif;
+}
+
+  #home .container h5{
+    font-size: 1.2rem;
+    font-family: "Borel", cursive;
+  }
 #home .container h1 span{
     color: coral;
     transition: transform 0.3s ease;
@@ -279,6 +380,20 @@ nav.navbar {
 }
 #home .container h1 span:hover {
     transform: scale(1.1) rotate(-2deg);
+  }
+  #home .container p{
+    font-size: 1.15rem;
+    font-family: "Marck Script", cursive;
+    font-weight: bold;
+  }
+  #home .container{
+    /* border: 1px solid; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 60px;
   }
 /* .......................end of home section............... */
 /* ................brand section......................... */
@@ -297,9 +412,13 @@ nav.navbar {
     opacity: 0;
     animation: logoFadeIn 0.6s ease-out forwards;
     transform-origin: center;
+    /* border:1px solid; */
+  }
+  #brand img:hover{
+      background-color: pink;
+     border-radius:  50px 10px;
   }
   
-
   #brand img:nth-child(1) {
     animation-delay: 2.1s;
   }
@@ -359,7 +478,10 @@ nav.navbar {
 }
 #new .one:hover .details{
     cursor: pointer;
-    background-color: rgba(196, 115, 115, 0.7);
+    background-color: rgba(187, 100, 100, 0.7);
+}
+#new .one:hover .details h2, button{
+    color: white;
 }
 #new .one .details button{
     display: inline-block;
@@ -414,21 +536,49 @@ nav.navbar {
 }
 
 /* Products.......... */
+#featured{
+  /* border: 2px solid; */
+}
+#featured .container h1{
+  font-size: 2.5rem;
+  font-family: "Sofia", sans-serif;
+}
+#featured .container p{
+  font-size: 1.3rem;
+}
 .product{
     cursor: pointer;
     margin-bottom: 2rem;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
 }
 .product img{
     transition: 0.3s all;
+    /* border: 1px solid; */
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .product:hover img{
-    opacity: 0.7;
+    opacity: 0.4;
+}
+.product .p-name{
+  /* color: red; */
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.product  .p-price{
+  font-size: 1.3rem;
 }
 .product .buy-btn{
     background-color: #fb774b;
     transform: translateY(20px);
     opacity: 0;
     transition: 0.3s all;
+    border-radius: 15px 50px 30px;
 }
 .product:hover .buy-btn{
     
@@ -470,7 +620,7 @@ nav.navbar {
   }
 
 #banner{
-        background-image: url("img/banner/2.jpg");
+        background-image: url("img/banner/parallax.jpg");
         width: 100%;
         height: 100vh;
         background-size: cover;
@@ -483,14 +633,17 @@ nav.navbar {
         align-items: flex-start;
 } 
 #banner h3{
-    color: #D8D8D8;
+    color: #d578c1;
     text-align: left;
 }
 #banner h1{
-    color: #fff;
+    color: #6874c2;
+    font-family:  "Sedan SC", serif;
 }
 #banner button{
     background-color: #fb774b;
+    padding: 10px 40px;
+    border-radius: 15px 50px 30px;
 } 
 .pl-30 {
     padding-left: 100px;

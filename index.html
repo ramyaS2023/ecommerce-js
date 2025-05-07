@@ -11,53 +11,30 @@
     <!-- Font Awesome -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papAZnOJ6U0xj3vbUV5zV8iN5NScPy/N4DZYz/7drPqvowwGyDH+XUumkZ7IEYfYMLuQmgWQa0r8sEr7U6+x1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <!-- Navigation -->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
-  <div class="container">
-    <img src="./img/logo1.png" alt="Logo" height="40" />
-    
-    
+  <div class="container d-flex justify-content-between align-items-center">
+    <img src="./img/logo1.png" alt="Logo" height="40"  />
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i class="fa-solid fa-bars"></i></span>
-    </button>
-
-
-
-    <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item d-flex align-items-center">
-         
-         
-          <!-- <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a> -->
-        </li>
-      </ul>
-    </div>
-
-
-
-    <div class="search">
-      <input type="text" class="input-box" id="search-item" onkeyup="search()" placeholder="Search..." />
-      <!-- <i class="fas fa-search input-icon" id="search-icon"></i> -->
-      
+   
+    <div class="search d-flex align-items-center mx-2">
+      <input type="text" class="input-box form-control form-control-sm" id="search-item" onkeyup="search()" placeholder="Search..."  />
+      <!-- <span class="input-group-text"><i class="fa fa-search"></i></span> -->
+ 
       <div class="product-list" id="product-list">
 
         <div class="sea-products">
           <img src="./img/shop/1.jpg" alt="">
           <div class="p-details">
               <h2>T-shirt for everyone</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$130 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
              
           </div>
         </div>
@@ -66,7 +43,7 @@
           <img src="./img/shop/10.jpg" alt="">
           <div class="p-details">
               <h2>Tranya Smart Watch</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$140 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
@@ -74,7 +51,7 @@
           <img src="./img/shop/9.jpg" alt="">
           <div class="p-details">
               <h2>PUMA roma Bag</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$150 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
@@ -82,7 +59,7 @@
           <img src="./img/shop/8.jpg" alt="">
           <div class="p-details">
               <h2>Hoodie For Everyone</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$125 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
@@ -90,7 +67,7 @@
           <img src="./img/shop/2.jpg" alt="">
           <div class="p-details">
               <h2>Grand Court Sneaker</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$150 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
@@ -98,7 +75,7 @@
           <img src="./img/shop/6.jpg" alt="">
           <div class="p-details">
               <h2>Fenta Hoodie</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$125 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
@@ -106,7 +83,7 @@
           <img src="./img/shop/22.jpg" alt="">
           <div class="p-details">
               <h2>Roadtrip Bag</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$120 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
@@ -114,7 +91,7 @@
           <img src="./img/shop/26.jpg" alt="">
           <div class="p-details">
               <h2>Gildan T-shirt</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$90 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
@@ -122,7 +99,7 @@
           <img src="./img/shop/13.jpg" alt="">
           <div class="p-details">
               <h2>Taranya Smar Watch</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$100 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
@@ -130,7 +107,7 @@
           <img src="./img/shop/25.jpg" alt="">
           <div class="p-details">
               <h2>Tranya T-shirt</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$60 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
@@ -138,7 +115,7 @@
           <img src="./img/shop/3.jpg" alt="">
           <div class="p-details">
               <h2>Fashionable Bags</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$80 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
@@ -146,7 +123,7 @@
           <img src="./img/shop/5.jpg" alt="">
           <div class="p-details">
               <h2>Hoodie Fashion</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$70 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
@@ -154,7 +131,7 @@
           <img src="./img/shop/7.jpg" alt="">
           <div class="p-details">
               <h2>Adidas Sneake</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$50 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
@@ -162,27 +139,51 @@
           <img src="./img/shop/4.jpg" alt="">
           <div class="p-details">
               <h2>Adidas Grand Sneaker</h2>
-              <h3>$25 &nbsp; &nbsp;  <i class="fas fa-shopping-cart"></i></h3>
+              <h3>$55 &nbsp; &nbsp;  <i class="fas fa-shopping-cart buy-btn"></i></h3>
           </div>
         </div>
 
       </div>
+    
     </div>
 
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fa-solid fa-bars"></i></span>
+    </button>
 
-
-
-
+  
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item d-flex align-items-center">
+          <!-- <i class="fas fa-search"></i> -->
+          <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
+
+
+
+
 <!-- Hero Section -->
 <section id="home">
-  <div class="container">
+  <div class="container my-3 py-5">
     <h5>NEW ARRIVALS</h5>
     <h1><span>Best Price</span> This Year</h1>
     <p>Shoomatic offers your very comfortable time <br> on walking and exercises.</p>
-    <button class="btn btn-dark mt-3">SHOP NOW</button>
+    <!-- <button class="btn btn-dark mt-3">SHOP NOW</button> -->
+    <div class="text-box">
+      <a href="#" class="btn btn-white btn-animate">SHOP NOW</a>
+  </div>
   </div>
 </section>
 
@@ -198,7 +199,7 @@
   </div>
 </section>
 
-<section id="new" class="w-100">
+<section id="new" class=" w-100">
   <div class="row p-0 m-0">
     <div class="one col-lg-4 col-md-12 col-12 p-0" >
       <img src="./img/new/1.jpg" alt="" class="img-fluid">
@@ -227,8 +228,8 @@
 </section>
 
 
-<section id="featured"class="my-5 pb-5">
-  <div class="container text-center mt-5 py-5">
+<section id="featured"class="my-3 pb-5">
+  <div class="container text-center mt-3 py-3">
     <h1>Our Featured</h1>
     <hr class="mx-auto">
     <p>Here You can check out our new products with fair price on rymo.</p>
@@ -244,7 +245,7 @@
         <i class="fa-solid fa-star"></i>
       </div>
       <h5 class="p-name">Sport Boots</h5>
-      <h4 class="p-price">$92.00</h4>
+      <h4 class="p-price">$192.00</h4>
       <button class="buy-btn">Buy Now</button>
     </div>
 
@@ -258,7 +259,7 @@
         <i class="fa-solid fa-star"></i>
       </div>
       <h5 class="p-name">Sport Boots</h5>
-      <h4 class="p-price">$92.00</h4>
+      <h4 class="p-price">$182.00</h4>
       <button class="buy-btn">Buy Now</button>
     </div>
 
@@ -271,7 +272,7 @@
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
       </div>
-      <h5 class="p-name">Sport Boots</h5>
+      <h5 class="p-name">Bag</h5>
       <h4 class="p-price">$92.00</h4>
       <button class="buy-btn">Buy Now</button>
     </div>
@@ -286,7 +287,7 @@
         <i class="fa-solid fa-star"></i>
       </div>
       <h5 class="p-name">Sport Boots</h5>
-      <h4 class="p-price">$92.00</h4>
+      <h4 class="p-price">$200.00</h4>
       <button class="buy-btn">Buy Now</button>
     </div>
 
@@ -294,17 +295,17 @@
   </div>
 </section>
 
-<section id="banner" class="my-5 py-5">
+<section id="banner" class="my-3 py-5">
   <div class="container  pl-30">
     <h3 class="p-2">MID SEASON'S SALE</h3>
     <h1 class="p-2">Autumn Collection <br> UP TO 20% OFF</h1>
-    <button class="text-uppercase p-2">Shop Now</button>
+    <!-- <button class="text-uppercase p-2">Shop Now</button> -->
   </div>
 </section>
 
 
-<section id="clothes"class="my-5 ">
-  <div class="container text-center mt-5 py-5">
+<section id="clothes"class="my-3 ">
+  <div class="container text-center mt-2 py-5">
     <h1>Dresses & Jumpsuits</h1>
     <hr class="mx-auto">
     <p>Here You can check out our new products with fair price on rymo.</p>
@@ -370,8 +371,8 @@
   </div>
 </section>
 
-<section id="watches"class="my-5 ">
-  <div class="container text-center mt-5 py-5">
+<section id="watches"class="my-3">
+  <div class="container text-center mt-2 py-5">
     <h1>Best Watches</h1>
     <hr class="mx-auto">
     <p>Here You can check out our new products with fair price on rymo.</p>
@@ -438,8 +439,8 @@
 </section>
 
 
-<section id="shoes"class="my-5 pb-5">
-  <div class="container text-center mt-5 py-5">
+<section id="shoes"class="my-3 pb-3">
+  <div class="container text-center mt-2 py-5">
     <h1>Running Shoes</h1>
     <hr class="mx-auto">
     <p>Here You can check out our new products with fair price on rymo.</p>
@@ -578,5 +579,43 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="main.js"></script>
+
+
+<script>
+  document.querySelectorAll(".buy-btn").forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const product = this.closest(".sea-products");
+      const imgSrc = product.querySelector("img").getAttribute("src");
+      const name = product.querySelector("h2").innerText;
+      const price = product.querySelector("h3").innerText.split(" ")[0]; 
+
+      const item = {
+        imgSrc,
+        name,
+        price,
+        quantity: 1
+      };
+
+      
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push(item);
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      alert(`${name} has been added to your cart!`);
+
+      
+      window.location.href = "cart.html";
+    });
+  });
+
+
+
+
+
+
+
+</script>
+
+
 </body>
 </html>
