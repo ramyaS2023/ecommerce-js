@@ -284,6 +284,15 @@ nav.navbar {
     padding: 20px  10px;
   }
 }
+
+@media(max-width:380px){
+  #home .container h1{
+        padding-left:0px;
+  }
+
+  }
+
+
 @media(max-width:350px){
   .product-list{
     width: 270px;
@@ -384,23 +393,9 @@ nav.navbar {
   opacity: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #home .container h1{
   font-family: "Rye", serif;
-  text-align: center;
+  /* text-align: center; */
   padding-left: 20px;
 }
 
@@ -412,7 +407,7 @@ nav.navbar {
 #home .container h1 span{
     color: coral;
     transition: transform 0.3s ease;
-    display: inline-block;
+    /* display: inline-block; */
 }
 #home .container h1 span:hover {
     transform: scale(1.1) rotate(-2deg);
